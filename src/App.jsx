@@ -1,7 +1,11 @@
 import './app.scss'
+import Navbar from './components/navbar/navbar'
+import {  useInView } from "framer-motion";
 const App = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
   return <div>
-    <section>trave</section>
+    <section><Navbar ref={ref}/></section>
     <section>portfolio</section>
     <section>packages</section>
     <section>teams</section>

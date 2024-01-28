@@ -1,0 +1,56 @@
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid wheat;
+    position: fixed;
+    z-index: 9999;
+  }
+  
+  .Navbar {
+    height: 100px;
+  
+    &.Navbar-red {
+      background-color: red;
+    }
+  
+    &.Navbar-blue {
+      background-color: blue;
+    }
+  
+    .wrapper {
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+  
+      @media (min-width: 728px) and (max-width: 1402px) {
+        justify-content: space-between;
+      }
+  
+      @media (max-width: 768px) {
+        justify-content: right;
+        padding-right: 10%;
+      }
+  
+      .img {
+        width: 2rem;
+      }
+  
+      span {
+        font-weight: medium;
+  
+        @media (max-width: 891px) {
+          display: none;
+        }
+      }
+  
+      .social {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+  
