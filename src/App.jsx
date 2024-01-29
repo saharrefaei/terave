@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './app.scss';
 import Navbar from './components/navbar/navbar';
-
+import WebsiteIntro from './components/websiteName/websiteintro'
+import Portfolio from './components/Portfolio/portfolio';
 const App = () => {
   const [Color, setColor] = useState(true);
 
@@ -25,12 +26,24 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <section><Navbar color={Color} /></section>
-      <section>portfolio</section>
-      <section>packages</section>
-      <section>teams</section>
-      <section>informations</section>
+    <div> 
+       <Navbar color={Color} />
+      <section id="Home">
+    
+      <WebsiteIntro />
+      </section>
+      <section id="portfolio">
+      <Portfolio/>
+      </section>
+      <section id="packages">
+      packages
+      </section>
+      <section id="teams">
+      teams
+      </section>
+      <section id="informations">
+      informations
+      </section>
     </div>
   );
 };
