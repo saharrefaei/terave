@@ -1,17 +1,22 @@
 import "./Navbar.scss";
-import { motion , useInView } from "framer-motion";
+import { motion  } from "framer-motion";
+import classNames from 'classnames';
+import LOGO from '../../images/logo.png'
 export default function Navbar({ color }) {
-  const navbarClassName = color ? "Navbar-red" : "Navbar-blue";
+  const navbarClassName = classNames('Navbar', {
+    'Navbar-top': color,
+    'Navbar-down': !color,
+  });
 
   return (
-    <div className={`Navbar ${navbarClassName}`}>
+    <div className={navbarClassName}>
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          evart logo{" "}
+          <img src={LOGO} style={{width:'27%'}}/>
         </motion.span>
         <div className="social">
           <motion.a
