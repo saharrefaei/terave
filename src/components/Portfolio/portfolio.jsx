@@ -39,7 +39,7 @@ function Portfolio() {
               style={{
                 width: "80%",
                 height: "auto",
-                borderRadius: "8px",
+                borderRadius: "30px",
                 className: "portfolioImage",
               }}
             /></a>

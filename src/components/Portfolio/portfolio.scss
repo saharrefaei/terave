@@ -28,7 +28,7 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      .photoText{
+      .photoText {
         display: flex;
         align-items: start;
         flex-direction: column;
@@ -40,17 +40,17 @@
       position: relative;
       display: inline-block;
       z-index: 1;
-      border-radius: 8px;
+      border-radius: 30px;
+      box-shadow:  5px 5px 60px 1px rgba(183, 183, 183, 0.4);
       filter: grayscale(80%);
       transition: 0.3s all;
 
       &:hover {
         filter: grayscale(0%);
-        transition: 0.3s all;    
+        transition: 0.3s all;
         box-shadow: 2px 2px 2px 10px rgba(140, 139, 139, 0.15);
-         backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
       }
     }
-
   }
 }
