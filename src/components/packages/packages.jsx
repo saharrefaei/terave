@@ -1,6 +1,9 @@
 import React from "react";
 import "./packages.scss";
+
+
 function packages() {
+
   return (
     <div className="packagesContainer">
     <div className="packagesTitle">
@@ -11,9 +14,14 @@ function packages() {
       </div>
       <p>Select your ideal plan from our plans below.</p>
     </div>
+   
+
+   
   </div>
   );
 }
+
+
 
 export default packages;
 
