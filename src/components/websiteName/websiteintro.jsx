@@ -13,8 +13,9 @@ export default function WebsiteIntro() {
         <div className="textContainer">
           <img src={LOGO} style={{ width: '100%' }} />
         </div>
-        <ExpandMoreIcon style={{marginTop:'40%'}} fontSize="large" />
-      </div>
+        <a href={`#portfolio`} style={{paddingTop:'40%'}}>
+        <ExpandMoreIcon  fontSize="large" /></a>
+        </div>
     </div>
   );
 }

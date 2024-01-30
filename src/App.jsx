@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './app.scss';
 import Navbar from './components/navbar/navbar';
-import WebsiteIntro from './components/websiteName/websiteintro'
+import WebsiteIntro from './components/websiteName/websiteintro';
 import Portfolio from './components/Portfolio/portfolio';
+import SideBar from './components/menu/sidebar/sidebar';
+import Packages from './components/packages/packages'
 const App = () => {
-  const [Color, setColor] = useState(true);
+  const [color, setColor] = useState(true);
+  const [open, setOpen] = useState(false); // State to manage the sidebar open/close
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,24 +29,18 @@ const App = () => {
   }, []);
 
   return (
-    <div> 
-       <Navbar color={Color} />
-      <section id="Home">
-    
-      <WebsiteIntro />
+    <div>
+      <Navbar color={color} setOpen={setOpen} /> {/* Pass setOpen to Navbar */}
+      <SideBar open={open} setOpen={setOpen} /> {/* Pass open and setOpen to SideBar */}
+      <section id="Homepage">
+        <WebsiteIntro />
       </section>
       <section id="portfolio">
-      <Portfolio/>
+        <Portfolio />
       </section>
-      <section id="packages">
-      packages
-      </section>
-      <section id="teams">
-      teams
-      </section>
-      <section id="informations">
-      informations
-      </section>
+      <section id="packages"><Packages/></section>
+      <section id="teams">teams</section>
+      <section id="informations">informations</section>
     </div>
   );
 };

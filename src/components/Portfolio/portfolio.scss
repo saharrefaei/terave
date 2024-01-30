@@ -1,0 +1,21 @@
+.portfolioContainer {
+  padding-top: 7rem;
+  padding-left: 3rem;
+
+  .portfolioTitle {
+    .firstLine {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-bottom: 10px;
+      .PORTFOLIO {
+        color: #b75df4;
+        font-style: normal;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px 10px 1px 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
