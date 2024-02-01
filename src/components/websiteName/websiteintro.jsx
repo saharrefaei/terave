@@ -11,7 +11,7 @@ export default function WebsiteIntro() {
       </video>
       <div className="wrapper">
         <div className="textContainer">
-          <img src={LOGO} style={{ width: '100%' }} />
+          <img src={LOGO} style={{ width: '24%' }} />
         </div>
         <a href={`#portfolio`} style={{paddingTop:'40%'}}>
         <ExpandMoreIcon  fontSize="large" /></a>

@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 function Portfolio() {
   const photoData = [
-    { url: portfolio1, title: "“Pars Bim” Construction Consulting Company" , description : "pars Bim"  },
-    { url: portfolio2, title: "“Fibo” Barber Shop" ,description : "Fibo"},
-    { url: portfolio3, title: "“Naan” Cafe",description : "Naan" },
+    { url: portfolio1, title: "LA shot" , description : "pars Bim"  },
+    { url: portfolio2, title: "Free girl" ,description : "spain"},
+    { url: portfolio3, title: "Besties",description : "mexiko" },
   ];
   return (
     <div className="portfolioContainer">
@@ -37,7 +37,7 @@ function Portfolio() {
               src={data.url}
               alt={`Photo ${index + 1}`}
               style={{
-                width: "80%",
+                width: "60%",
                 height: "auto",
                 borderRadius: "30px",
                 className: "portfolioImage",

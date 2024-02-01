@@ -15,62 +15,72 @@ function packages() {
           Select your ideal plan from our plans below.
         </p>
       </div>
-      <div  className="planes">
-
-                <div className="plansCard1">
-                    <div className="plans1">
-                        <div className="ptitle"><b>Bronze</b><span className="planesColor1">BRONZE</span></div>
-                        <div className="pinsider">
-                            <span>Branding Design</span>
-                            <span>UX Design</span>
-                            <span>Web Design</span>
-                            <span>Photograpy</span>
-                        </div>
-                        <i>Contact with Us</i>
-                        <a href="#">Order</a>
-                    </div>
-                </div>
-                <div  className="plansCard2">
-                    <div className="plans2">
-                        <div className="ptitle"><b>Silver</b><span className="planesColor2">SILVER</span></div>
-                        <div className="pinsider">
-                            <span>Branding Design</span>
-                            <span>Video production</span>
-                            <span>UX Design</span>
-                            <span>Web Design</span>
-                            <span>Photograpy</span>
-                            <span>Digital Marketing</span>
-                        </div>
-                        <i>Contact with Us</i>
-                        <a href="#">Order</a>
-                    </div>
-                </div>
-                <div  className="plansCard3">
-                    <div className="plans3">
-                        <div className="ptitle"><b>Gold</b><span className="planesColor3">GOLD</span></div>
-                        <div className="pinsider">
-                            <span>Art direction</span>
-                            <span>UX Design</span>
-                            <span>Web Design</span>
-                            <span>Photograpy</span>
-                            <span>Digital Marketing</span>
-                        </div>
-                        <i>Contact with Us</i>
-                        <a href="#">Order</a>
-                    </div>
-                </div>
-                <div  className="plansCard4">
-                    <div className="plans4">
-                        <div className="ptitle"><b>Diamond</b><span className="planesColor4">DIAMOND</span></div>
-                        <div className="pinsider">
-                            <span>You can customize your plan with any service you want</span>
-                        </div>
-                        <i>Contact with Us</i>
-                        <a href="#">Order</a>
-                    </div>
-                </div>
+      <div className="planes">
+        <div className="plansCard1">
+          <div className="plans1">
+            <div className="ptitle">
+              <b>normal</b>
+              <span className="planesColor1">NORMAL</span>
             </div>
-    
+            <div className="pinsider">
+              <span>Background design</span>
+              <span>Make up</span>
+              <span>pose</span>
+              <span>Photograpy</span>
+            </div>
+            <i>Contact with Us</i>
+            <a href={`#contacts`}>Order</a>{" "}
+          </div>
+        </div>
+        <div className="plansCard2">
+          <div className="plans2">
+            <div className="ptitle">
+              <b>heigh</b>
+              <span className="planesColor2">HEIGH</span>
+            </div>
+            <div className="pinsider">
+              <span>Background design</span>
+              <span>Make up</span>
+              <span>pose</span>
+              <span>Photograpy</span>
+              <span>Edit Photos</span>
+              <span>Advertising</span>
+            </div>
+            <i>Contact with Us</i>
+            <a href={`#contacts`}>Order</a>{" "}
+          </div>
+        </div>
+        <div className="plansCard3">
+          <div className="plans3">
+            <div className="ptitle">
+              <b>prime</b>
+              <span className="planesColor3">PRIME</span>
+            </div>
+            <div className="pinsider">
+              <span>Background design</span>
+              <span>Make up</span>
+              <span>pose</span>
+              <span>Photograpy</span>
+              <span>Edit photo</span>
+            </div>
+            <i>Contact with Us</i>
+            <a href={`#contacts`}>Order</a>{" "}
+          </div>
+        </div>
+        <div className="plansCard4">
+          <div className="plans4">
+            <div className="ptitle">
+              <b>you</b>
+              <span className="planesColor4">YOU</span>
+            </div>
+            <div className="pinsider">
+              <span>You can customize your plan with any service you want</span>
+            </div>
+            <i>Contact with Us</i>
+            <a href={`#contacts`}>Order</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

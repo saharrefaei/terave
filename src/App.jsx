@@ -5,9 +5,10 @@ import WebsiteIntro from './components/websiteName/websiteintro';
 import Portfolio from './components/Portfolio/portfolio';
 import SideBar from './components/menu/sidebar/sidebar';
 import Packages from './components/packages/packages'
+import ContactInfo from './components/contacts/contsctInfo';
 const App = () => {
   const [color, setColor] = useState(true);
-  const [open, setOpen] = useState(false); // State to manage the sidebar open/close
+  const [open, setOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,8 +31,8 @@ const App = () => {
 
   return (
     <div>
-      <Navbar color={color} setOpen={setOpen} /> {/* Pass setOpen to Navbar */}
-      <SideBar open={open} setOpen={setOpen} /> {/* Pass open and setOpen to SideBar */}
+      <Navbar color={color} setOpen={setOpen} /> 
+      <SideBar open={open} setOpen={setOpen} /> 
       <section id="Homepage">
         <WebsiteIntro />
       </section>
@@ -39,8 +40,8 @@ const App = () => {
         <Portfolio />
       </section>
       <section id="packages"><Packages/></section>
-      <section id="teams">teams</section>
-      <section id="informations">informations</section>
+      <section id="contacts"><ContactInfo/></section>
+    
     </div>
   );
 };
