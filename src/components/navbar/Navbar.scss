@@ -1,0 +1,62 @@
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid wheat;
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 1000;
+  transition: height 0.6s ease;
+  &.Navbar-top {
+    // border-radius: 5px;
+    // backdrop-filter: blur(5px); 
+    // height: 100px;
+  }
+
+  &.Navbar-down {
+    height: 80px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(140, 139, 139, 0.15);
+    backdrop-filter: blur(5px); 
+   }
+
+  .wrapper {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140%;
+
+    @media (min-width: 728px) and (max-width: 1402px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: right;
+      padding-right: 10%;
+    }
+
+  
+
+    span {
+      font-weight: medium;
+
+      @media (max-width: 891px) {
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
