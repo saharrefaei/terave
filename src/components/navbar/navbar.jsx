@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import LOGO from '../../images/logo.png';
 import PublicIcon from '@mui/icons-material/Public';
 import MenuIcon from '@mui/icons-material/Menu';
-import './navbar.scss'
+import './Navbar.scss'
 export default function Navbar({ color, setOpen }) {
   const navbarClassName = classNames('Navbar', {
     'Navbar-top': color,
