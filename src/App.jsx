@@ -29,6 +29,7 @@ const App = () => {
     };
   }, []);
 
+  
   return (
     <div>
       <Navbar color={color} setOpen={setOpen} /> 
