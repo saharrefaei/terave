@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Links from "../Links/Link";
-import "./SideBar.scss";
+import "./sideBar.scss";
 export default function SideBar({ open, setOpen }) {
   const variants = {
     open: {
