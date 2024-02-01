@@ -9,7 +9,7 @@ function Portfolio() {
   const photoData = [
     { url: portfolio1, title: "LA shot" , description : "pars Bim"  },
     { url: portfolio2, title: "Free girl" ,description : "spain"},
-    { url: portfolio3, title: "Besties",description : "mexiko" },
+    { url: portfolio3, title: "“Naan” Cafe",description : "mexiko" },
   ];
   return (
     <div className="portfolioContainer">

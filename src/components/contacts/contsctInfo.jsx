@@ -14,11 +14,11 @@ function ContactInfo() {
                          <span>saharreaei199@gmail.com</span>
                 </div>
                 <div>
-                         <span style={{paddingRight:'20%'}}><PermPhoneMsgIcon/></span>
+                         <span style={{paddingRight:'5%'}}><PermPhoneMsgIcon/></span>
                          <span>+4911111111</span>
                 </div>
                 <div>
-                         <span style={{paddingRight:'20%'}}><LocationOnIcon/></span>
+                         <span style={{paddingRight:'5%'}}><LocationOnIcon/></span>
                          <span>germany</span>
                 </div>
 

@@ -23,7 +23,14 @@
     display: flex;
     align-items: center;
     padding-right: 4%;
+    padding-right: 10%;
+    @media (min-width: 728px) and (max-width: 1412px) {
+      flex-direction: column;
+    }
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     .plansCard1 {
       display: inline-block;
       height: 30rem;
@@ -117,6 +124,7 @@
             border-bottom: 1px solid rgba(53, 53, 87, 0.5);
           }
         }
+
         i {
           background: -webkit-linear-gradient(
             rgb(167, 75, 240) 0%,
@@ -374,11 +382,14 @@
           }
         }
         i {
-          background: -webkit-linear-gradient(rgb(255, 170, 54) 0%, rgb(255, 106, 0) 100%);
+          background: -webkit-linear-gradient(
+            rgb(255, 170, 54) 0%,
+            rgb(255, 106, 0) 100%
+          );
           background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 25px rgba(226, 158, 53, 0.5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 0 25px rgba(226, 158, 53, 0.5);
           width: 100%;
           font-size: 14px;
           letter-spacing: 3px;
@@ -497,11 +508,14 @@
           }
         }
         i {
-          background: -webkit-linear-gradient(rgb(74, 204, 198) 0%, rgb(31, 150, 196) 100%);
+          background: -webkit-linear-gradient(
+            rgb(74, 204, 198) 0%,
+            rgb(31, 150, 196) 100%
+          );
           background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 25px rgba(54, 179, 197, 0.5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 0 25px rgba(54, 179, 197, 0.5);
           width: 100%;
           font-size: 14px;
           letter-spacing: 3px;

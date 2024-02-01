@@ -28,6 +28,8 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
+
+  
       .photoText {
         display: flex;
         align-items: start;
@@ -36,6 +38,24 @@
       }
     }
 
+    @media (min-width: 728px) and (max-width: 1412px) {
+      flex: 0 0 33.33%;
+      padding: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+    flex: 0 0 33.33%;
+      padding: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      flex-direction: column;
+
+    }
     img {
       position: relative;
       display: inline-block;
@@ -52,5 +72,6 @@
         backdrop-filter: blur(5px);
       }
     }
+  
   }
 }
