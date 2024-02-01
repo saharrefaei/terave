@@ -50,8 +50,6 @@ function packages() {
                         <div className="ptitle"><b>Gold</b><span className="planesColor3">GOLD</span></div>
                         <div className="pinsider">
                             <span>Art direction</span>
-                            <span>Branding Design</span>
-                            <span>Video production</span>
                             <span>UX Design</span>
                             <span>Web Design</span>
                             <span>Photograpy</span>
